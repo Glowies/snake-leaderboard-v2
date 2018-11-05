@@ -1,0 +1,29 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "Server for snake leaderboard",
+  "engines": {
+    "node": "0.12.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "connect": "^3.4.0",
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "mongodb": "^2.2.11",
+    "socket.io": "^1.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Glowies/snake"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "ISC"
+}
