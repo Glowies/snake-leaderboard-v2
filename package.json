@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Server for snake leaderboard",
   "engines": {
-    "node": "0.12.4"
+    "node": "10.13.0"
   },
   "main": "index.js",
   "scripts": {

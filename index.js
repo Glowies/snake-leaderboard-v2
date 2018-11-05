@@ -22,8 +22,8 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://glowies:1q4ogH
                 console.log('No doc in collection');
             }
         });
-        http.listen(process.env.PORT || 3000, function () { // port = process.env.PORT
-            console.log('listening on port: ' + process.env.PORT || 3000);
+        http.listen((process.env.PORT || 3000), function () { // port = process.env.PORT
+            console.log('listening on port: ' + (process.env.PORT || 3000));
         });
     }
 });
