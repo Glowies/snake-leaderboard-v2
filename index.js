@@ -5,8 +5,8 @@ var io = require('socket.io').listen(http);
 var fs = require('fs');
 var mongodb = require('mongodb');
 
-mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://glowies:1q4ogHrhg8I7@ds061206.mlab.com:61206/heroku_ls0g949q", function (err, db) {
-    mdb = db;
+mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://glowies:1q4ogHrhg8I7@ds061206.mlab.com:61206/heroku_ls0g949q", function (err, mdb) {
+    db = mdb.db("heroku_ls0g949q");
     if (err) {
         console.log('Unable to connect to MongoDB', err);
     } else {
