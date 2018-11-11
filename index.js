@@ -58,7 +58,7 @@ io.on('connection', function (socket) {
                     console.log('Error finding in collection', err);
                 } else if (result.length) {
                     // Update user highscores if necessary.
-                    if (result[0].score < data.score || result[0].length < data.length || result[0].maxCombo < data.maxCombo) {
+                    if (result[0].score < data.score || result[0].length < data.length || result[0].maxCombo < data.maxCombo || result[0].photoURL != data.photoURL) {
                         collection.updateOne({uid: data.uid}, {$set: {
                             uid: result[0].uid,
                             email: result[0].email,
